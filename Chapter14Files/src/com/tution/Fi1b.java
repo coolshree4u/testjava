@@ -1,0 +1,19 @@
+package com.tution;
+
+import java.io.File;
+
+public class Fi1b {
+
+	public static void main(String[] args) {
+		File f=new File(args[0]);
+		System.out.println("File Exist is "+f.exists());
+		
+		try {
+			f.createNewFile();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println("File Exist is "+f.exists());
+	}
+
+}
